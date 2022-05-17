@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Las referencias externas para JavaScript y Css se han establecido para implementar las animaciones y los mensajes que se muestran en el navegador cuando
+    el jugador avanza en su partida-->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Roberto_Garcia_Rodriguez_Práctica4.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="scrabble-letter.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="Roberto_Garcia_Rodriguez_Práctica4.js" type="module"></script>
+    <title>GUESS THE WORD</title>
+</head>
+<body>
+    <div id = "inicio">
+        <img  id= "mimg" src="portrait2.jpg" >
+        
+    </div>
+    <div id = "cabecera">
+        <h1>GUESS THE WORD!</h1>
+    </div>
+    
+    <div id = "rules" >
+        <div class ="reglas">
+            <h3>REGLAS</h3>
+
+            <p>El juego consiste en descubrir la palabra oculta.<br> 
+                A medida que vayas introduciendo palabras de cinco letras las casillas se colorean de diferentes colores, 
+                dependiendo de si esta o no en la palabra y si esta correctamente posicionada en la misma. <br>
+                El color gris significa que la letra introducida no esta en la palabra, el color amarillo que se encuentra pero no esta bien posicionada y el color verde que si lo esta.<br>
+                Tienes un total de 6 intentos para descubrir la palabra, las palabras no contienen tildes.
+            </p>
+            
+            <h3 id="respuesta"></h3>
+
+        </div>
+    </div>
+    <div class ="alinear">
+        <div id="cajas">
+        
+
+        
+        </div>
+    </div>
+
+    <div id="teclado">
+        <div class="first-row">
+            <button class="boton-teclado">q</button>
+            <button class="boton-teclado">w</button>
+            <button class="boton-teclado">e</button>
+            <button class="boton-teclado">r</button>
+            <button class="boton-teclado">t</button>
+            <button class="boton-teclado">y</button>
+            <button class="boton-teclado">u</button>
+            <button class="boton-teclado">i</button>
+            <button class="boton-teclado">o</button>
+            <button class="boton-teclado">p</button>
+        </div>
+        <div class="second-row">
+            <button class="boton-teclado">a</button>
+            <button class="boton-teclado">s</button>
+            <button class="boton-teclado">d</button>
+            <button class="boton-teclado">f</button>
+            <button class="boton-teclado">g</button>
+            <button class="boton-teclado">h</button>
+            <button class="boton-teclado">j</button>
+            <button class="boton-teclado">k</button>
+            <button class="boton-teclado">l</button>
+        </div>
+        <div class="third-row">
+            <button class="boton-teclado">Del</button>
+            <button class="boton-teclado">z</button>
+            <button class="boton-teclado">x</button>
+            <button class="boton-teclado">c</button>
+            <button class="boton-teclado">v</button>
+            <button class="boton-teclado">b</button>
+            <button class="boton-teclado">n</button>
+            <button class="boton-teclado">m</button>
+            <button class="boton-teclado">Enter</button>
+        </div>
+    </div>
+    <button id="refresh">VOLVER A JUGAR</button>
+    
+</body>
+</html>
